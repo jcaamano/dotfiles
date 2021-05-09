@@ -1,0 +1,19 @@
+# import with
+# [include]
+#     path = .config/git/common
+[alias]
+	vc = log --oneline --no-merges --no-decorate --format='  * %s'
+	lo = log --oneline
+	ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ll = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --numstat
+	fl = log -u
+	cp = cherry-pick
+        st = status -s
+        cl = clone
+        ci = commit
+        co = checkout
+        br = branch
+        diff = diff --word-diff
+        dc = diff --cached
+[core]
+	excludesfile = .gitignore
