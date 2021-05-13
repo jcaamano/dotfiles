@@ -15,13 +15,15 @@ if ! zgen saved; then
   zgen prezto prompt theme 'pure'
 
   # load prezto
+  # default modules: 'environment' 'terminal' 'editor' 'history' 'directory' 'spectrum' 'utility' 'completion' 'prompt'
+  # from: https://github.com/jandamm/zgenom/blob/6ff785d403dd3f0d3b739c9c2d3508f49003441f/zgen.zsh#L750
   zgen prezto
-  zgen prezto history-substring-search
   zgen prezto syntax-highlighting
+  zgen prezto history-substring-search
+  zgen prezto autosuggestions 
 
   # load other stuff
   zgen load junegunn/fzf shell
-  zgen load tarruda/zsh-autosuggestions
 
   # save
   zgen save
