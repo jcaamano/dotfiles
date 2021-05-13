@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "[go]": {
+    
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "window.menuBarVisibility": "compact",
+    "editor.columnSelection": false,
+    "go.toolsManagement.autoUpdate": true,
+    "explorer.confirmDragAndDrop": false
+}
