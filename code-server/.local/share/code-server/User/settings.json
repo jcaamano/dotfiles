@@ -11,5 +11,6 @@
     "window.menuBarVisibility": "compact",
     "editor.columnSelection": false,
     "go.toolsManagement.autoUpdate": true,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.defaultProfile.linux": "zsh"
 }
