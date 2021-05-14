@@ -1,0 +1,7 @@
+Vagrant.configure("2") do |config|
+  config.ssh.forward_agent = true
+  config.trigger.after [:destroy, :halt, :reload, :resume, :suspend, :up] do |trigger|
+    trigger.info = "Syncing ssh config..."
+    trigger.run = {inline: "vagrant.ssh.config"}
+  end
+end
