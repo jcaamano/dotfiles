@@ -24,7 +24,6 @@ if ! zgen saved; then
 
   # load other stuff
   zgen load junegunn/fzf shell
-  zgen load mattmc3/zshrc.d
 
   # save
   zgen save
