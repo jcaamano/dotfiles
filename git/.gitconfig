@@ -1,7 +1,7 @@
 [include]
         path = .config/git/common
 [user]
-	name = Jaime Caamaño Ruiz
-	email = jcaamano@redhat.com
+	name = Patryk Diak
+	email = pdiak@redhat.com
 [credential "https://github.com"]
 	helper = !gh auth git-credential
