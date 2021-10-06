@@ -14,5 +14,6 @@
     "explorer.confirmDragAndDrop": false,
     "terminal.integrated.defaultProfile.linux": "zsh",
     "go.testTags": "unittests",
-    "terminal.integrated.scrollback": 10000
+    "terminal.integrated.scrollback": 10000,
+    "keyboard.layout": "es"
 }
