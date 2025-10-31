@@ -7,10 +7,22 @@
     "remote.SSH.defaultExtensions": [
         "golang.go",
         "eamodio.gitlens",
-        "github.vscode-pull-request-github"
+        "github.vscode-pull-request-github",
+        "joselitofilho.ginkgotestexplorer"
     ],
     "extensions.ignoreRecommendations": true,
     "files.autoSave": "afterDelay",
     "gitlens.home.preview.enabled": false,
-    "git.ignoreRebaseWarning": true
+    "git.ignoreRebaseWarning": true,
+    "githubPullRequests.pullBranch": "never",
+    "security.workspace.trust.untrustedFiles": "open",
+    "go.toolsManagement.autoUpdate": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.openRepositoryInParentFolders": "never",
+    "githubPullRequests.remotes": [
+        "origin",
+        "upstream",
+        "downstream"
+    ],
+    "makefile.configureOnOpen": false
 }
