@@ -24,5 +24,8 @@
         "upstream",
         "downstream"
     ],
-    "makefile.configureOnOpen": false
+    "makefile.configureOnOpen": false,
+    "claudeCode.preferredLocation": "sidebar",
+    "claudeCode.useTerminal": true,
+    "terminal.integrated.scrollback": 100000
 }
