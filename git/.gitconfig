@@ -5,3 +5,10 @@
 	email = jcaamano@redhat.com
 [credential "https://github.com"]
 	helper = !gh auth git-credential
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	defaultKeyCommand = ssh-add -L
+	allowedSignersFile = /home/vagrant/.ssh/allowed_signers
