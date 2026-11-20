@@ -5,3 +5,11 @@
 	email = jcaamano@redhat.com
 [credential "https://github.com"]
 	helper = !gh auth git-credential
+[gpg]
+        format = ssh
+[commit]
+        gpgsign = true
+[gpg "ssh"]
+        defaultKeyCommand = sh -c \"ssh-add -L | grep jcaamano\"
+        allowedSignersFile = ~/.ssh/allowed_signers
+
