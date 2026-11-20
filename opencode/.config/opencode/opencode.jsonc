@@ -1,0 +1,96 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  // Default model
+  "model": "enmaas/rits/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+
+  // Keep sharing disabled because this may be used with private data.
+  "share": "disabled",
+
+  "providers": {
+    "enmaas": {
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        "baseURL": "https://api.enmaas.devshift.net/v1"
+      },
+      "env": ["ENMAAS_API_KEY"],
+
+      "models": {
+        "rits/zai-org/glm-5-3": {
+          "name": "ENMAAS GLM 5.3",
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          }
+        },
+
+        "rits/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+          "name": "ENMAAS DeepSeek V4.1 Flash",
+          "limit": {
+            "context": 1048576,
+            "output": 262144
+          }
+        },
+
+        "rits/meta-models/Muse-Spark-Open-816B-A42B-NVFP4": {
+          "name": "ENMAAS Muse Spark Open",
+          "limit": {
+            "context": 1048576,
+            "output": 131072
+          }
+        }
+      }
+    },
+
+    "openai-enmaas": {
+      "settings": {
+        "baseURL": "https://api.enmaas.devshift.net/v1"
+      },
+      "env": ["ENMAAS_API_KEY"],
+
+      "models": {
+        "gpt-6.1-sol": {
+          "name": "ENMAAS GPT-6.1 Sol"
+        },
+
+        "gpt-6-luna": {
+          "name": "ENMAAS GPT-6 Luna"
+        }
+      }
+    },
+
+    "google-enmaas": {
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        "baseURL": "https://api.enmaas.devshift.net/v1",
+        "apiKey": "{env:ENMAAS_API_KEY}"
+      },
+      "env": ["ENMAAS_API_KEY"],
+
+      "models": {
+        "gemini-3.8-flash": {
+          "name": "ENMAAS Gemini 3.8 Flash"
+        }
+      }
+    },
+
+    "anthropic-enmaas": {
+      "settings": {
+        "baseURL": "https://api.enmaas.devshift.net/v1"
+      },
+      "env": ["ENMAAS_API_KEY"],
+
+      "models": {
+        "claude-opus-5": {
+          "name": "ENMAAS Claude Opus 5",
+          "settings": {
+            "thinking": {
+              "type": "adaptive"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
